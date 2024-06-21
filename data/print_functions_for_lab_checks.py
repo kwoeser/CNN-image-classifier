@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # */AIPND/intropylab-classifying-images/print_functions_for_lab_checks.py
 #                                                                             
-# PROGRAMMER: Jennifer S.                                                    
-# DATE CREATED: 05/14/2018                                  
-# REVISED DATE:             <=(Date Revised - if any)                         
+# PROGRAMMER: Karma Woeser                                                    
+# DATE CREATED: 06/22/2024                                  
+# REVISED DATE: 06/22/2024           <=(Date Revised - if any)                         
 # PURPOSE:  This set of functions can be used to check your code after programming 
 #           each function. The top section of each part of the lab contains
 #           the section labeled 'Checking your code'. When directed within this
