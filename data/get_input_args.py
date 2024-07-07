@@ -51,7 +51,7 @@ def get_input_args():
     parser.add_argument('--arch', type = str, default='vgg', help = 'the CNN model architecture: vgg' )
 
     # Argument 3: dognames.txt
-    parser.add_argument('--dogfile', type = str, help = 'text file of names of dog breeds: dognames.txt' )
+    parser.add_argument('--dogfile', type = str, default='dognames.txt', help = 'text file of names of dog breeds: dognames.txt' )
 
     in_args = parser.parse_args()
     # Accesses values of Argument 1 by printing it
