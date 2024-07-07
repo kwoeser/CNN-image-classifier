@@ -48,10 +48,10 @@ def get_input_args():
     
     # Argument 2: CNN model arch
     # CNN model must be resnet, vgg or alexne
-    parser.add_argument('--arch', type = str, default = 'the CNN model architecture: vgg' )
+    parser.add_argument('--arch', type = str, default='vgg', help = 'the CNN model architecture: vgg' )
 
     # Argument 3: dognames.txt
-    parser.add_argument('--dogfile', type = str, default = 'text file of names of dog breeds: dognames.txt' )
+    parser.add_argument('--dogfile', type = str, help = 'text file of names of dog breeds: dognames.txt' )
 
     in_args = parser.parse_args()
     # Accesses values of Argument 1 by printing it
