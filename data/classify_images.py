@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/classify_images.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                 
-# REVISED DATE: 
+# PROGRAMMER: Karma Woeser
+# DATE CREATED: 6/27/2024                             
+# REVISED DATE: 6/30/2024
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
 #          labels to the pet image labels. This function inputs:
@@ -78,8 +78,8 @@ def classify_images(images_dir, results_dic, model):
        # inputs: path + filename  and  model, returns model_label 
        # as classifier label
        model_label = ""
-       
-       model_label = classifier(images_dir+key, model)
+       dir = images_dir + key 
+       model_label = classifier(dir, model)
 
        # TODO: 3b. BELOW REPLACE pass with CODE to process the model_label to 
        #           convert all characters within model_label to lowercase 
@@ -89,7 +89,7 @@ def classify_images(images_dir, results_dic, model):
        #
        # Processes the results so they can be compared with pet image labels
        # set labels to lowercase (lower) and stripping off whitespace(strip)
-       model_label = model_label.lower()
+       model_label = model_label.lower().strip()
               
        # defines truth as pet image label 
        truth = results_dic[key][0]

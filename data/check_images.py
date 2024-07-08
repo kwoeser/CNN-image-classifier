@@ -5,7 +5,7 @@
 # TODO 0: Add your information below for Programmer & Date Created.                                                                             
 # PROGRAMMER: Karma
 # DATE CREATED: 6/22/2024                              
-# REVISED DATE: 
+# REVISED DATE: 7/7/2024
 # PURPOSE: Classifies pet images using a pretrained CNN model, compares these
 #          classifications to the true identity of the pets in the images, and
 #          summarizes how well the CNN performed on the image classification task. 
