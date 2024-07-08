@@ -1,0 +1,83 @@
+Argument 1: uploaded_images/
+Argument 2: vgg
+Argument 3: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Filename= car_01.jpg    Label= car
+
+Filename= crocodile_01.jpg    Label= crocodile
+
+Filename= dog_01.jpg    Label= dog
+
+Filename= dog_02.jpg    Label= dog
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     car_01.jpg  label:                        car
+ 2 key:               crocodile_01.jpg  label:                  crocodile
+ 3 key:                     dog_01.jpg  label:                        dog
+ 4 key:                     dog_02.jpg  label:                        dog
+
+     MATCH:
+
+                    car_01.jpg: 
+Real:                        car   Classifier:          sports car, sport car
+
+              crocodile_01.jpg: 
+Real:                  crocodile   Classifier: african crocodile, nile crocodile, crocodylus niloticus
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+                    car_01.jpg: 
+Real:                        car   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              crocodile_01.jpg: 
+Real:                  crocodile   Classifier: african crocodile, nile crocodile, crocodylus niloticus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match: 100.0%
+pct_correct_dogs: 100.0%
+pct_correct_breed: 100.0%
+pct_correct_notdogs: 100.0%
+
+** Total Elapsed Runtime: 0:0:1
