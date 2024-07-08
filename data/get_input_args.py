@@ -50,45 +50,6 @@ def get_input_args():
     # CNN model must be resnet, vgg or alexnet
     parser.add_argument('--arch', type = str, default='vgg', help = 'the CNN model architecture: vgg' )
     
-    """
-    CNN model stats
-
-    RESNET
-    # Total Images 40 # Matches: 33 # NOT Matches: 7
-
-    ** Statistics from calculates_results_stats() function:
-    N Images: 40  N Dog Images: 30  N NotDog Images: 10
-    Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
-
-    ** Check Statistics - calculated from this function as a check:
-    N Images: 40  N Dog Images: 30  N NotDog Images: 10
-    Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
-
-    
-    VGG 
-    # Total Images 40 # Matches: 35 # NOT Matches: 5
-
-    ** Statistics from calculates_results_stats() function:
-    N Images: 40  N Dog Images: 30  N NotDog Images: 10
-    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
-
-    ** Check Statistics - calculated from this function as a check:
-    N Images: 40  N Dog Images: 30  N NotDog Images: 10
-    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
-
-    
-    ALEXNET
-    # Total Images 40 # Matches: 30 # NOT Matches: 10
-
-    ** Statistics from calculates_results_stats() function:
-    N Images: 40  N Dog Images: 30  N NotDog Images: 10
-    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
-
-    ** Check Statistics - calculated from this function as a check:
-    N Images: 40  N Dog Images: 30  N NotDog Images: 10
-    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
-
-    """ 
     # Argument 3: dognames.txt
     parser.add_argument('--dogfile', type = str, default='dognames.txt', help = 'text file of names of dog breeds: dognames.txt' )
 

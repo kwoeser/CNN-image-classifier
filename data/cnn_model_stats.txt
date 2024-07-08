@@ -1,0 +1,100 @@
+1. 
+    VGG
+    # Total Images 40 # Matches: 35 # NOT Matches: 5
+
+    ** Statistics from calculates_results_stats() function:
+    N Images: 40  N Dog Images: 30  N NotDog Images: 10
+    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
+
+    ** Check Statistics - calculated from this function as a check:
+    N Images: 40  N Dog Images: 30  N NotDog Images: 10
+    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
+
+
+    *** Results Summary for CNN Model Architecture VGG ***
+    N Images            :  40
+    N Dog Images        :  30
+    N Not-Dog Images    :  10
+
+    pct_match :  87.5 %
+    pct_correct_dogs :  100.0 %
+    pct_correct_breed :  93.3 %
+    pct_correct_notdogs :  100.0 %
+
+    INCORRECT Dog Breed Assignment:
+    Real:                     beagle   Classifier:  walker hound, walker foxhound
+    Real:             great pyrenees   Classifier:                         kuvasz
+
+    ** Total Elapsed Runtime: 0:0:6
+
+
+
+
+2. 
+    RESNET
+    # Total Images 40 # Matches: 33 # NOT Matches: 7
+
+    ** Statistics from calculates_results_stats() function:
+    N Images: 40  N Dog Images: 30  N NotDog Images: 10
+    Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
+
+    ** Check Statistics - calculated from this function as a check:
+    N Images: 40  N Dog Images: 30  N NotDog Images: 10
+    Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
+
+
+    *** Results Summary for CNN Model Architecture RESNET ***
+    N Images            :  40
+    N Dog Images        :  30
+    N Not-Dog Images    :  10
+
+    pct_match :  82.5 %
+    pct_correct_dogs :  100.0 %
+    pct_correct_breed :  90.0 %
+    pct_correct_notdogs :  90.0 %
+
+    INCORRECT Dog/NOT Dog Assignments:
+    Real:                        cat   Classifier:   norwegian elkhound, elkhound
+
+    INCORRECT Dog Breed Assignment:
+    Real:           golden retriever   Classifier:                       leonberg
+    Real:                     beagle   Classifier:  walker hound, walker foxhound
+    Real:             great pyrenees   Classifier:                         kuvasz
+
+    ** Total Elapsed Runtime: 0:0:1
+
+
+
+
+3. 
+    ALEXNET
+    # Total Images 40 # Matches: 30 # NOT Matches: 10
+
+    ** Statistics from calculates_results_stats() function:
+    N Images: 40  N Dog Images: 30  N NotDog Images: 10
+    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+
+    ** Check Statistics - calculated from this function as a check:
+    N Images: 40  N Dog Images: 30  N NotDog Images: 10
+    Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+
+
+    *** Results Summary for CNN Model Architecture ALEXNET ***
+    N Images            :  40
+    N Dog Images        :  30
+    N Not-Dog Images    :  10
+
+    pct_match :  75.0 %
+    pct_correct_dogs :  100.0 %
+    pct_correct_breed :  80.0 %
+    pct_correct_notdogs :  100.0 %
+
+    INCORRECT Dog Breed Assignment:
+    Real:                     beagle   Classifier:               english foxhound
+    Real:             boston terrier   Classifier:                        basenji
+    Real:           golden retriever   Classifier:                tibetan mastiff
+    Real:                     beagle   Classifier:  walker hound, walker foxhound
+    Real:             great pyrenees   Classifier:                         kuvasz
+    Real:           golden retriever   Classifier:           afghan hound, afghan
+
+    ** Total Elapsed Runtime: 0:0:1
