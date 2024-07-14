@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# */AIPND-revision/intropyproject-classify-pet-images/calculates_results_stats.py
 #                                                                             
 # PROGRAMMER: Karma Woeser
 # DATE CREATED: 07/01/2024                       
@@ -38,10 +37,7 @@
 #            pct_correct_notdogs - percentage of correctly classified NON-dogs
 #
 ##
-# TODO 5: Define calculates_results_stats function below, please be certain to replace None
-#       in the return statement with the results_stats_dic dictionary that you create 
-#       with this function
-# 
+
 def calculates_results_stats(results_dic):
     """
     Calculates statistics of the results of the program run using classifier's model 
@@ -85,16 +81,6 @@ def calculates_results_stats(results_dic):
         # Labels Match Exactly
         if results_dic[key][2] == 1:
             results_stats_dic['n_match'] += 1
-
-        # TODO: 5a. REPLACE pass with CODE that counts how many pet images of
-        #           dogs had their breed correctly classified. This happens 
-        #           when the pet image label indicates the image is-a-dog AND 
-        #           the pet image label and the classifier label match. You 
-        #           will need to write a conditional statement that determines
-        #           when the dog breed is correctly classified and then 
-        #           increments 'n_correct_breed' by 1. Recall 'n_correct_breed' 
-        #           is a key in the results_stats_dic dictionary with it's value 
-        #           representing the number of correctly classified dog breeds.
 
         # Pet Image Label is a Dog AND Labels match- counts Correct Breed
         if results_dic[key][2] == 1 and results_dic[key][3] == 1:
@@ -147,7 +133,7 @@ def calculates_results_stats(results_dic):
     else:
         results_stats_dic['pct_correct_notdogs'] = 0.0
 
-        
-    # TODO 5f. REPLACE None with the results_stats_dic dictionary that you 
-    # created with this function 
-    return results_stats_dic
+
+    return results_stats_dic 
+    #
+
